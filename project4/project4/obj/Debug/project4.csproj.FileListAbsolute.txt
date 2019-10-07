@@ -1,0 +1,10 @@
+C:\Users\vand2653\source\repos\project4\project4\bin\Debug\project4.exe.config
+C:\Users\vand2653\source\repos\project4\project4\bin\Debug\project4.exe
+C:\Users\vand2653\source\repos\project4\project4\bin\Debug\project4.pdb
+C:\Users\vand2653\source\repos\project4\project4\obj\Debug\project4.csprojAssemblyReference.cache
+C:\Users\vand2653\source\repos\project4\project4\obj\Debug\project4.frmProject4.resources
+C:\Users\vand2653\source\repos\project4\project4\obj\Debug\project4.Properties.Resources.resources
+C:\Users\vand2653\source\repos\project4\project4\obj\Debug\project4.csproj.GenerateResource.cache
+C:\Users\vand2653\source\repos\project4\project4\obj\Debug\project4.csproj.CoreCompileInputs.cache
+C:\Users\vand2653\source\repos\project4\project4\obj\Debug\project4.exe
+C:\Users\vand2653\source\repos\project4\project4\obj\Debug\project4.pdb

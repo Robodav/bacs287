@@ -1,0 +1,10 @@
+C:\Users\vand2653\source\repos\week6WednesdayCoursework\week6WednesdayCoursework\bin\Debug\week6WednesdayCoursework.exe.config
+C:\Users\vand2653\source\repos\week6WednesdayCoursework\week6WednesdayCoursework\bin\Debug\week6WednesdayCoursework.exe
+C:\Users\vand2653\source\repos\week6WednesdayCoursework\week6WednesdayCoursework\bin\Debug\week6WednesdayCoursework.pdb
+C:\Users\vand2653\source\repos\week6WednesdayCoursework\week6WednesdayCoursework\obj\Debug\week6WednesdayCoursework.csprojAssemblyReference.cache
+C:\Users\vand2653\source\repos\week6WednesdayCoursework\week6WednesdayCoursework\obj\Debug\week6WednesdayCoursework.frmWed.resources
+C:\Users\vand2653\source\repos\week6WednesdayCoursework\week6WednesdayCoursework\obj\Debug\week6WednesdayCoursework.Properties.Resources.resources
+C:\Users\vand2653\source\repos\week6WednesdayCoursework\week6WednesdayCoursework\obj\Debug\week6WednesdayCoursework.csproj.GenerateResource.cache
+C:\Users\vand2653\source\repos\week6WednesdayCoursework\week6WednesdayCoursework\obj\Debug\week6WednesdayCoursework.csproj.CoreCompileInputs.cache
+C:\Users\vand2653\source\repos\week6WednesdayCoursework\week6WednesdayCoursework\obj\Debug\week6WednesdayCoursework.exe
+C:\Users\vand2653\source\repos\week6WednesdayCoursework\week6WednesdayCoursework\obj\Debug\week6WednesdayCoursework.pdb

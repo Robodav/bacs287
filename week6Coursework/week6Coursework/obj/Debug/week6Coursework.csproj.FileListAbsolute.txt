@@ -1,0 +1,10 @@
+C:\Users\vand2653\source\repos\week6Coursework\week6Coursework\obj\Debug\week6Coursework.csprojAssemblyReference.cache
+C:\Users\vand2653\source\repos\week6Coursework\week6Coursework\obj\Debug\week6Coursework.frmWeek6.resources
+C:\Users\vand2653\source\repos\week6Coursework\week6Coursework\obj\Debug\week6Coursework.Properties.Resources.resources
+C:\Users\vand2653\source\repos\week6Coursework\week6Coursework\obj\Debug\week6Coursework.csproj.GenerateResource.cache
+C:\Users\vand2653\source\repos\week6Coursework\week6Coursework\obj\Debug\week6Coursework.csproj.CoreCompileInputs.cache
+C:\Users\vand2653\source\repos\week6Coursework\week6Coursework\bin\Debug\week6Coursework.exe.config
+C:\Users\vand2653\source\repos\week6Coursework\week6Coursework\bin\Debug\week6Coursework.exe
+C:\Users\vand2653\source\repos\week6Coursework\week6Coursework\bin\Debug\week6Coursework.pdb
+C:\Users\vand2653\source\repos\week6Coursework\week6Coursework\obj\Debug\week6Coursework.exe
+C:\Users\vand2653\source\repos\week6Coursework\week6Coursework\obj\Debug\week6Coursework.pdb
