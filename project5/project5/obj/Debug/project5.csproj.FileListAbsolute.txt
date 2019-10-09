@@ -1,0 +1,10 @@
+C:\Users\vand2653\source\repos\project5\project5\bin\Debug\project5.exe.config
+C:\Users\vand2653\source\repos\project5\project5\bin\Debug\project5.exe
+C:\Users\vand2653\source\repos\project5\project5\bin\Debug\project5.pdb
+C:\Users\vand2653\source\repos\project5\project5\obj\Debug\project5.csprojAssemblyReference.cache
+C:\Users\vand2653\source\repos\project5\project5\obj\Debug\project5.frmProject5.resources
+C:\Users\vand2653\source\repos\project5\project5\obj\Debug\project5.Properties.Resources.resources
+C:\Users\vand2653\source\repos\project5\project5\obj\Debug\project5.csproj.GenerateResource.cache
+C:\Users\vand2653\source\repos\project5\project5\obj\Debug\project5.csproj.CoreCompileInputs.cache
+C:\Users\vand2653\source\repos\project5\project5\obj\Debug\project5.exe
+C:\Users\vand2653\source\repos\project5\project5\obj\Debug\project5.pdb
