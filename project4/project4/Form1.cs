@@ -25,7 +25,7 @@ namespace project4
             lstTuition.Items.Add("Year            Tuition");
             for (int i = 1; i <= years; i++)
             {
-                string tuDisplay = i.ToString() + "                  " + tuition.ToString("c");
+                string tuDisplay = i.ToString() + "                  " + tuition.ToString("c"); //display with formatting
                 lstTuition.Items.Add(tuDisplay);
                 total += tuition;
                 tuition += (tuition * .02);
@@ -37,7 +37,7 @@ namespace project4
         {
             int seriesEnd = int.Parse(txtInput.Text);
             int output = 1;
-            if (radProduct.Checked && seriesEnd > 0)
+            if (radProduct.Checked && seriesEnd > 0) //calculate product
             {
                 int i = 1;
                 while (i <= seriesEnd)
@@ -47,7 +47,7 @@ namespace project4
                 }
                 txtOutput.Text = output.ToString();
             }
-            else if (radSumOdd.Checked && seriesEnd > 0)
+            else if (radSumOdd.Checked && seriesEnd > 0) //calculate sum of odd
             {
                 output = 0;
                 double oddTotal = 0;
@@ -58,6 +58,25 @@ namespace project4
                 }
                 txtOutput.Text = oddTotal.ToString();
             }
+        }
+
+        private void BtnCompute_Click(object sender, EventArgs e)
+        {
+            double interest = double.Parse(txtInterest.Text);
+            double deposit = double.Parse(txtDeposit.Text);
+            int years = 0;
+            do //add years until deposit reaches 1000000
+            {
+                years++;
+                deposit += (deposit * interest);
+            } while (deposit < 1000000);
+            txtTotalYears.Text = years.ToString();
+
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
