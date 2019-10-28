@@ -1,0 +1,10 @@
+C:\Users\vand2653\source\repos\week9Coursework\week9Coursework\bin\Debug\week9Coursework.exe.config
+C:\Users\vand2653\source\repos\week9Coursework\week9Coursework\bin\Debug\week9Coursework.exe
+C:\Users\vand2653\source\repos\week9Coursework\week9Coursework\bin\Debug\week9Coursework.pdb
+C:\Users\vand2653\source\repos\week9Coursework\week9Coursework\obj\Debug\week9Coursework.csprojAssemblyReference.cache
+C:\Users\vand2653\source\repos\week9Coursework\week9Coursework\obj\Debug\week9Coursework.frmWeek9.resources
+C:\Users\vand2653\source\repos\week9Coursework\week9Coursework\obj\Debug\week9Coursework.Properties.Resources.resources
+C:\Users\vand2653\source\repos\week9Coursework\week9Coursework\obj\Debug\week9Coursework.csproj.GenerateResource.cache
+C:\Users\vand2653\source\repos\week9Coursework\week9Coursework\obj\Debug\week9Coursework.csproj.CoreCompileInputs.cache
+C:\Users\vand2653\source\repos\week9Coursework\week9Coursework\obj\Debug\week9Coursework.exe
+C:\Users\vand2653\source\repos\week9Coursework\week9Coursework\obj\Debug\week9Coursework.pdb
