@@ -36,13 +36,13 @@
             this.comboFilter = new System.Windows.Forms.ComboBox();
             this.grpFilter = new System.Windows.Forms.GroupBox();
             this.grpChampionships = new System.Windows.Forms.GroupBox();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.txtChampionships = new System.Windows.Forms.TextBox();
             this.grpWhoWon = new System.Windows.Forms.GroupBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.txtThisYear = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.lstTeams = new System.Windows.Forms.ListBox();
-            this.txtChampionships = new System.Windows.Forms.TextBox();
-            this.txtThisYear = new System.Windows.Forms.TextBox();
-            this.btnCalculate = new System.Windows.Forms.Button();
-            this.btnSubmit = new System.Windows.Forms.Button();
             this.grpFilter.SuspendLayout();
             this.grpChampionships.SuspendLayout();
             this.grpWhoWon.SuspendLayout();
@@ -102,11 +102,18 @@
             // 
             this.comboFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFilter.FormattingEnabled = true;
+            this.comboFilter.Items.AddRange(new object[] {
+            "Ascending",
+            "Descending",
+            "Winners with Years",
+            "Deduplicated",
+            "One-time Champs"});
             this.comboFilter.Location = new System.Drawing.Point(139, 33);
             this.comboFilter.Name = "comboFilter";
             this.comboFilter.Size = new System.Drawing.Size(225, 32);
             this.comboFilter.TabIndex = 5;
             this.comboFilter.Text = "Select an Item";
+            this.comboFilter.SelectedIndexChanged += new System.EventHandler(this.ComboFilter_SelectedIndexChanged);
             // 
             // grpFilter
             // 
@@ -129,6 +136,24 @@
             this.grpChampionships.TabIndex = 7;
             this.grpChampionships.TabStop = false;
             // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalculate.Location = new System.Drawing.Point(233, 50);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(104, 33);
+            this.btnCalculate.TabIndex = 5;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
+            // 
+            // txtChampionships
+            // 
+            this.txtChampionships.Location = new System.Drawing.Point(44, 57);
+            this.txtChampionships.Name = "txtChampionships";
+            this.txtChampionships.Size = new System.Drawing.Size(138, 20);
+            this.txtChampionships.TabIndex = 4;
+            // 
             // grpWhoWon
             // 
             this.grpWhoWon.Controls.Add(this.btnSubmit);
@@ -140,47 +165,6 @@
             this.grpWhoWon.TabIndex = 8;
             this.grpWhoWon.TabStop = false;
             // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(546, 31);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
-            this.btnClear.TabIndex = 9;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            // 
-            // lstTeams
-            // 
-            this.lstTeams.FormattingEnabled = true;
-            this.lstTeams.Location = new System.Drawing.Point(27, 115);
-            this.lstTeams.Name = "lstTeams";
-            this.lstTeams.Size = new System.Drawing.Size(298, 316);
-            this.lstTeams.TabIndex = 10;
-            // 
-            // txtChampionships
-            // 
-            this.txtChampionships.Location = new System.Drawing.Point(44, 57);
-            this.txtChampionships.Name = "txtChampionships";
-            this.txtChampionships.Size = new System.Drawing.Size(138, 20);
-            this.txtChampionships.TabIndex = 4;
-            // 
-            // txtThisYear
-            // 
-            this.txtThisYear.Location = new System.Drawing.Point(44, 50);
-            this.txtThisYear.Name = "txtThisYear";
-            this.txtThisYear.Size = new System.Drawing.Size(138, 20);
-            this.txtThisYear.TabIndex = 5;
-            // 
-            // btnCalculate
-            // 
-            this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.Location = new System.Drawing.Point(233, 50);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(104, 33);
-            this.btnCalculate.TabIndex = 5;
-            this.btnCalculate.Text = "Calculate";
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            // 
             // btnSubmit
             // 
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -190,6 +174,32 @@
             this.btnSubmit.TabIndex = 6;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.BtnSubmit_Click);
+            // 
+            // txtThisYear
+            // 
+            this.txtThisYear.Location = new System.Drawing.Point(44, 50);
+            this.txtThisYear.Name = "txtThisYear";
+            this.txtThisYear.Size = new System.Drawing.Size(138, 20);
+            this.txtThisYear.TabIndex = 5;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(546, 31);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 9;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
+            // lstTeams
+            // 
+            this.lstTeams.FormattingEnabled = true;
+            this.lstTeams.Location = new System.Drawing.Point(27, 115);
+            this.lstTeams.Name = "lstTeams";
+            this.lstTeams.Size = new System.Drawing.Size(298, 316);
+            this.lstTeams.TabIndex = 10;
             // 
             // frmProject6
             // 
