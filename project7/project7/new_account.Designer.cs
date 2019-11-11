@@ -39,12 +39,14 @@
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnTogglePassView = new System.Windows.Forms.Button();
             this.lblTogglePassView = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(64, 83);
+            this.lblName.Location = new System.Drawing.Point(71, 37);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(38, 13);
             this.lblName.TabIndex = 0;
@@ -53,7 +55,7 @@
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(73, 133);
+            this.lblAge.Location = new System.Drawing.Point(80, 87);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(29, 13);
             this.lblAge.TabIndex = 1;
@@ -62,7 +64,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(63, 188);
+            this.lblEmail.Location = new System.Drawing.Point(70, 142);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(39, 13);
             this.lblEmail.TabIndex = 2;
@@ -71,7 +73,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(46, 247);
+            this.lblPassword.Location = new System.Drawing.Point(53, 201);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(56, 13);
             this.lblPassword.TabIndex = 3;
@@ -79,28 +81,28 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(135, 83);
+            this.txtName.Location = new System.Drawing.Point(142, 37);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(179, 20);
             this.txtName.TabIndex = 4;
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(135, 133);
+            this.txtAge.Location = new System.Drawing.Point(142, 87);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(47, 20);
             this.txtAge.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(135, 188);
+            this.txtEmail.Location = new System.Drawing.Point(142, 142);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(179, 20);
             this.txtEmail.TabIndex = 6;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(135, 247);
+            this.txtPassword.Location = new System.Drawing.Point(142, 201);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(136, 20);
             this.txtPassword.TabIndex = 7;
@@ -117,7 +119,7 @@
             // 
             // btnTogglePassView
             // 
-            this.btnTogglePassView.Location = new System.Drawing.Point(277, 247);
+            this.btnTogglePassView.Location = new System.Drawing.Point(284, 201);
             this.btnTogglePassView.Name = "btnTogglePassView";
             this.btnTogglePassView.Size = new System.Drawing.Size(22, 22);
             this.btnTogglePassView.TabIndex = 9;
@@ -126,17 +128,36 @@
             // lblTogglePassView
             // 
             this.lblTogglePassView.AutoSize = true;
-            this.lblTogglePassView.Location = new System.Drawing.Point(305, 252);
+            this.lblTogglePassView.Location = new System.Drawing.Point(312, 206);
             this.lblTogglePassView.Name = "lblTogglePassView";
             this.lblTogglePassView.Size = new System.Drawing.Size(79, 13);
             this.lblTogglePassView.TabIndex = 10;
             this.lblTogglePassView.Text = "Toggle Visibility";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(142, 248);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(136, 20);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.UseSystemPasswordChar = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(53, 248);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Confirm Password:";
             // 
             // frmNewAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 384);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTogglePassView);
             this.Controls.Add(this.btnTogglePassView);
             this.Controls.Add(this.btnCreate);
@@ -168,5 +189,7 @@
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnTogglePassView;
         private System.Windows.Forms.Label lblTogglePassView;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

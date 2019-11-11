@@ -77,6 +77,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // linkCreate
             // 
@@ -87,6 +88,7 @@
             this.linkCreate.TabIndex = 5;
             this.linkCreate.TabStop = true;
             this.linkCreate.Text = "create account";
+            this.linkCreate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkCreate_LinkClicked);
             // 
             // frmLogin
             // 

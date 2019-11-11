@@ -16,5 +16,10 @@ namespace project7
         {
             InitializeComponent();
         }
+
+        private void BtnSubmit_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

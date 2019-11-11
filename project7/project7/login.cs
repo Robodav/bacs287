@@ -16,5 +16,24 @@ namespace project7
         {
             InitializeComponent();
         }
+
+        private void LinkCreate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            frmNewAccount newAcc = new frmNewAccount();
+            newAcc.ShowDialog();
+        }
+
+        private void BtnLogin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var address = new System.Net.Mail.MailAddress(txtEmail.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Must be valid email address!");
+            }
+        }
     }
 }

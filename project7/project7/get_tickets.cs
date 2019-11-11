@@ -16,5 +16,21 @@ namespace project7
         {
             InitializeComponent();
         }
+
+        private void LinkAdmin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            frmAdminLogin adminlog = new frmAdminLogin();
+            adminlog.ShowDialog();
+            this.Close();
+        }
+
+        private void BtnGetTickets_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmLogin login = new frmLogin();
+            login.ShowDialog();
+            this.Close();
+        }
     }
 }

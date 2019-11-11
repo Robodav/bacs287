@@ -51,6 +51,7 @@
             this.btnGetTickets.TabIndex = 1;
             this.btnGetTickets.Text = "Get Tickets";
             this.btnGetTickets.UseVisualStyleBackColor = true;
+            this.btnGetTickets.Click += new System.EventHandler(this.BtnGetTickets_Click);
             // 
             // linkAdmin
             // 
@@ -61,6 +62,7 @@
             this.linkAdmin.TabIndex = 2;
             this.linkAdmin.TabStop = true;
             this.linkAdmin.Text = "Admin";
+            this.linkAdmin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkAdmin_LinkClicked);
             // 
             // frmGetTickets
             // 
