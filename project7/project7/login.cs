@@ -17,6 +17,9 @@ namespace project7
             InitializeComponent();
         }
 
+        InputFunctions inputfuncs = new InputFunctions();
+        FileFunctions filefuncs = new FileFunctions();
+
         private void LinkCreate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
@@ -26,13 +29,24 @@ namespace project7
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            try
+            if (!inputfuncs.verifyEmail(txtEmail.Text))
             {
-                var address = new System.Net.Mail.MailAddress(txtEmail.Text);
+                MessageBox.Show("Please enter a valid email address");
             }
-            catch
+            else if (filefuncs.checkUser(txtEmail.Text))
             {
-                MessageBox.Show("Must be valid email address!");
+                if (filefuncs.getPassword(txtEmail.Text) == txtPassword.Text)
+                {
+                    MessageBox.Show("Welcome back!");
+                }
+                else
+                {
+                    MessageBox.Show("Invalid password.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("An account does not exist with that email address.");
             }
         }
     }

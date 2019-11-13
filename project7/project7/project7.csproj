@@ -62,6 +62,8 @@
     <Compile Include="admin_login.Designer.cs">
       <DependentUpon>admin_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="filefunctions.cs" />
+    <Compile Include="inputfunctions.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
