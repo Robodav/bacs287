@@ -36,11 +36,11 @@ namespace project7
             }
             else if (filefuncs.checkUser(email))
             {
-                string password = filefuncs.getPassword(email);
+                string password = filefuncs.getField(email, 3);
                 if (password == txtPassword.Text)
                 {
                     MessageBox.Show("Welcome back!");
-                    User.Name = filefuncs.getName(email);
+                    User.Name = filefuncs.getField(email, 0);
                     User.Email = email;
                     User.Password = password;
                 }

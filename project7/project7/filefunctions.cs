@@ -31,17 +31,7 @@ namespace project7
             return false;
         }
 
-        public string getName(string email)
-        {
-            return getField(email, 1);
-        }
-
-        public string getPassword(string email) // retrieves the password in users.csv
-        {
-            return getField(email, 3);
-        }
-
-        public string getField(string email, int field)
+        public string getField(string email, int field) // returns value of index field for user based on specified email from users.csv
         {
             string[] users = System.IO.File.ReadAllLines("users.csv");
             foreach (string user in users)
