@@ -1,14 +1,7 @@
 ﻿using System;
 
-public class User
+public static class User
 {
-	public User(string name, string email, string password)
-	{
-        Name = name;
-        Email = email;
-        Password = password;
-	}
-
     public static string Name
     {
         get; set;

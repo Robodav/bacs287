@@ -113,7 +113,7 @@
             this.btnCreate.Location = new System.Drawing.Point(164, 309);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 23);
-            this.btnCreate.TabIndex = 8;
+            this.btnCreate.TabIndex = 9;
             this.btnCreate.Text = "Submit";
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
@@ -141,7 +141,7 @@
             this.txtConfirm.Location = new System.Drawing.Point(142, 248);
             this.txtConfirm.Name = "txtConfirm";
             this.txtConfirm.Size = new System.Drawing.Size(136, 20);
-            this.txtConfirm.TabIndex = 12;
+            this.txtConfirm.TabIndex = 8;
             this.txtConfirm.UseSystemPasswordChar = true;
             // 
             // label1

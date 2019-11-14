@@ -1,7 +1,6 @@
-﻿name,age,email,password,role
-Dav,20,dvan@gmail.com,test123,0
-Ash,25,ash@gmail.com,test123,0
-Miranda,48,mir@hotmail.com,test123,0
-Jason,23,jas@outlook.com,test123,0
-Bruce,52,bruce@unco.edu,test123,0
-Dave,20,dav@gmail.com,test123,0
+﻿name,age,email,password,role,cc,ccname,csv,ticketslow,ticketsclub,ticketsupper,confirmation,cost
+Dav,20,dvan@gmail.com,test123,0,0,0,0,0,0,0,0,0
+John,42,jman77@gmail.com,test123,0,0,0,0,0,0,0,0,0
+Shelly,30,sniperslay89@gmail.com,test123,0,0,0,0,0,0,0,0,0
+Cia,21,ciahyrule@hotmail.com,test123,0,0,0,0,0,0,0,0,0
+Janet,24,jan@outlook.com,test123,0,0,0,0,0,0,0,0,0

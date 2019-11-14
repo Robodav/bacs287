@@ -48,10 +48,12 @@ namespace project7
             if (txtPassword.UseSystemPasswordChar)
             {
                 txtPassword.UseSystemPasswordChar = false;
+                txtConfirm.UseSystemPasswordChar = false;
             }
             else
             {
                 txtPassword.UseSystemPasswordChar = true;
+                txtConfirm.UseSystemPasswordChar = true;
             }
         }
     }

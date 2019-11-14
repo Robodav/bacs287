@@ -12,7 +12,7 @@ namespace project7
         public void writeUser(string name, string age, string email, string password, string role) // writes a new user to users.csv
         {
             string userInfo = "\n" + name + "," + age + "," + email + "," + password + "," + role;
-
+            userInfo += ",0,0,0,0,0,0,0,0";
             System.IO.File.AppendAllText("users.csv", userInfo);
         }
 
