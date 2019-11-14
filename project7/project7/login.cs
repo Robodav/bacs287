@@ -29,15 +29,20 @@ namespace project7
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            if (!inputfuncs.verifyEmail(txtEmail.Text))
+            string email = txtEmail.Text;
+            if (!inputfuncs.verifyEmail(email))
             {
                 MessageBox.Show("Please enter a valid email address");
             }
-            else if (filefuncs.checkUser(txtEmail.Text))
+            else if (filefuncs.checkUser(email))
             {
-                if (filefuncs.getPassword(txtEmail.Text) == txtPassword.Text)
+                string password = filefuncs.getPassword(email);
+                if (password == txtPassword.Text)
                 {
                     MessageBox.Show("Welcome back!");
+                    User.Name = filefuncs.getName(email);
+                    User.Email = email;
+                    User.Password = password;
                 }
                 else
                 {

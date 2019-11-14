@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace project7
 {
@@ -17,14 +9,14 @@ namespace project7
 
         }
 
-        public void writeUser(string name, string age, string email, string password, string role)
+        public void writeUser(string name, string age, string email, string password, string role) // writes a new user to users.csv
         {
             string userInfo = "\n" + name + "," + age + "," + email + "," + password + "," + role;
 
             System.IO.File.AppendAllText("users.csv", userInfo);
         }
 
-        public bool checkUser(string email)
+        public bool checkUser(string email) // checks if a user exists in users.csv
         {
             string[] users = System.IO.File.ReadAllLines("users.csv");
             foreach (string user in users)
@@ -39,7 +31,17 @@ namespace project7
             return false;
         }
 
-        public string getPassword(string email)
+        public string getName(string email)
+        {
+            return getField(email, 1);
+        }
+
+        public string getPassword(string email) // retrieves the password in users.csv
+        {
+            return getField(email, 3);
+        }
+
+        public string getField(string email, int field)
         {
             string[] users = System.IO.File.ReadAllLines("users.csv");
             foreach (string user in users)
@@ -47,11 +49,10 @@ namespace project7
                 string[] individual = user.Split(',');
                 if (individual[2] == email)
                 {
-                    return individual[3];
+                    return individual[field];
                 }
             }
-
-            return "";
+            return "User not found!";
         }
     }
 }

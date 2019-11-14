@@ -1,3 +1,2 @@
-lower	200
-club	75
-upper	200
+lower,club,upper
+200,75,200
