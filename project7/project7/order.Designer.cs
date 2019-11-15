@@ -78,6 +78,7 @@
             this.btnBuy.TabIndex = 6;
             this.btnBuy.Text = "Buy";
             this.btnBuy.UseVisualStyleBackColor = true;
+            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
             // 
             // comboUpper
             // 

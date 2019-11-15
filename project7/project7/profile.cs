@@ -25,7 +25,9 @@ namespace project7
 
         private void btnPurchase_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmOrder order = new frmOrder();
+            order.ShowDialog();
         }
     }
 }

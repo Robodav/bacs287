@@ -145,7 +145,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="tickets.csv" />
+    <None Include="bin\Debug\tickets.csv" />
     <None Include="users.csv" />
   </ItemGroup>
   <ItemGroup>
