@@ -15,6 +15,7 @@ namespace project7
         public frmOrder()
         {
             InitializeComponent();
+
             comboLower.SelectedIndex = 0;
             comboClub.SelectedIndex = 0;
             comboUpper.SelectedIndex = 0;
@@ -22,9 +23,9 @@ namespace project7
             string[] ticketsfile = System.IO.File.ReadAllLines("tickets.csv");
             string[] tickets = ticketsfile[1].Split(',');
 
-            int lowerCount = int.Parse(tickets[0]);
-            int clubCount = int.Parse(tickets[1]);
-            int upperCount = int.Parse(tickets[2]);
+            var lowerCount = int.Parse(tickets[0]);
+            var clubCount = int.Parse(tickets[1]);
+            var upperCount = int.Parse(tickets[2]);
 
             // If less than 8 tickets left, adjust combo box.
             if (lowerCount < 8)
@@ -62,6 +63,7 @@ namespace project7
                 }
             }
 
+            // Finally, repeat with upper level tickets.
             if (upperCount < 8)
             {
                 if (upperCount == 0)
@@ -81,7 +83,10 @@ namespace project7
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
-
+            var lowerTotal = int.Parse(comboLower.SelectedItem.ToString()) * 125;
+            var clubTotal = int.Parse(comboLower.SelectedItem.ToString()) * 75;
+            var upperTotal = int.Parse(comboLower.SelectedItem.ToString()) * 50;
+            var totalCost = lowerTotal + clubTotal + upperTotal;
         }
     }
 }
