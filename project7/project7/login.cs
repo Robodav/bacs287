@@ -40,6 +40,7 @@ namespace project7
                 if (password == txtPassword.Text)
                 {
                     this.Hide();
+                    // Create user object to maintain attributes throughout application.
                     User.Name = filefuncs.getField(email, 0);
                     User.Email = email;
                     User.Password = password;

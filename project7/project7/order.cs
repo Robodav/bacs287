@@ -26,13 +26,16 @@ namespace project7
             int clubCount = int.Parse(tickets[1]);
             int upperCount = int.Parse(tickets[2]);
 
-            if (lowerCount < 8) // if less than 8 tickets left, adjust combo box
+            // If less than 8 tickets left, adjust combo box.
+            if (lowerCount < 8)
             {
-                if (lowerCount == 0) // if no tickets left, display as sold out
+                // If no tickets left, display as sold out.
+                if (lowerCount == 0)
                 {
                     comboLower.Visible = false;
                     lblLower.Text = "Sold Out";
                 }
+                // Make combo box show only the amount of tickets left at most.
                 else
                 {
                     for (int i = 0; i < (9 - lowerCount); i++)
@@ -41,6 +44,8 @@ namespace project7
                     }
                 }
             }
+
+            // Repeat the same process with club section tickets.
             if (clubCount < 8)
             {
                 if (clubCount == 0)
@@ -56,6 +61,7 @@ namespace project7
                     }
                 }
             }
+
             if (upperCount < 8)
             {
                 if (upperCount == 0)

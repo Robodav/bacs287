@@ -9,14 +9,16 @@ namespace project7
 
         }
 
-        public void writeUser(string name, string age, string email, string password, string role) // writes a new user to users.csv
+        public void writeUser(string name, string age, string email, string password, string role) 
+        // Writes a new user to users.csv.
         {
             string userInfo = "\n" + name + "," + age + "," + email + "," + password + "," + role;
             userInfo += ",0,0,0,0,0,0,0,0";
             System.IO.File.AppendAllText("users.csv", userInfo);
         }
 
-        public bool checkUser(string email) // checks if a user exists in users.csv
+        public bool checkUser(string email) 
+        // Checks if a user exists in users.csv.
         {
             string[] users = System.IO.File.ReadAllLines("users.csv");
             foreach (string user in users)
@@ -31,7 +33,8 @@ namespace project7
             return false;
         }
 
-        public string getField(string email, int field) // returns value of index field for user based on specified email from users.csv
+        public string getField(string email, int field) 
+        // Returns value of index field for user based on specified email from users.csv.
         {
             string[] users = System.IO.File.ReadAllLines("users.csv");
             foreach (string user in users)
