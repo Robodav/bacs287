@@ -39,7 +39,7 @@
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnTogglePassView = new System.Windows.Forms.Button();
             this.lblTogglePassView = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtConfirm = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -113,9 +113,10 @@
             this.btnCreate.Location = new System.Drawing.Point(164, 309);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 23);
-            this.btnCreate.TabIndex = 8;
+            this.btnCreate.TabIndex = 9;
             this.btnCreate.Text = "Submit";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnTogglePassView
             // 
@@ -124,6 +125,7 @@
             this.btnTogglePassView.Size = new System.Drawing.Size(22, 22);
             this.btnTogglePassView.TabIndex = 9;
             this.btnTogglePassView.UseVisualStyleBackColor = true;
+            this.btnTogglePassView.Click += new System.EventHandler(this.btnTogglePassView_Click);
             // 
             // lblTogglePassView
             // 
@@ -134,18 +136,18 @@
             this.lblTogglePassView.TabIndex = 10;
             this.lblTogglePassView.Text = "Toggle Visibility";
             // 
-            // textBox1
+            // txtConfirm
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 248);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.txtConfirm.Location = new System.Drawing.Point(142, 248);
+            this.txtConfirm.Name = "txtConfirm";
+            this.txtConfirm.Size = new System.Drawing.Size(136, 20);
+            this.txtConfirm.TabIndex = 8;
+            this.txtConfirm.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 248);
+            this.label1.Location = new System.Drawing.Point(15, 248);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 13);
             this.label1.TabIndex = 11;
@@ -156,7 +158,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 384);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtConfirm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTogglePassView);
             this.Controls.Add(this.btnTogglePassView);
@@ -189,7 +191,7 @@
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnTogglePassView;
         private System.Windows.Forms.Label lblTogglePassView;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtConfirm;
         private System.Windows.Forms.Label label1;
     }
 }
