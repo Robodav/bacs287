@@ -27,56 +27,39 @@ namespace project7
             var clubCount = int.Parse(tickets[1]);
             var upperCount = int.Parse(tickets[2]);
 
-            // If less than 8 tickets left, adjust combo box.
-            if (lowerCount < 8)
+            // If less than max tickets left, adjust combo box.
+            if (lowerCount < 10)
             {
                 // If no tickets left, display as sold out.
-                if (lowerCount == 0)
-                {
-                    comboLower.Visible = false;
-                    lblLower.Text = "Sold Out";
-                }
-                // Make combo box show only the amount of tickets left at most.
-                else
-                {
-                    for (int i = 0; i < (9 - lowerCount); i++)
-                    {
-                        comboLower.Items.RemoveAt(lowerCount + 1);
-                    }
-                }
+                adjustBox(lowerCount, comboLower, lblLower);
             }
 
             // Repeat the same process with club section tickets.
-            if (clubCount < 8)
+            if (clubCount < 10)
             {
-                if (clubCount == 0)
-                {
-                    comboClub.Visible = false;
-                    lblClub.Text = "Sold Out";
-                }
-                else
-                {
-                    for (int i = 0; i < (9 - clubCount); i++)
-                    {
-                        comboClub.Items.RemoveAt(clubCount + 1);
-                    }
-                }
+                adjustBox(clubCount, comboClub, lblClub);
             }
 
             // Finally, repeat with upper level tickets.
-            if (upperCount < 8)
+            if (upperCount < 10)
             {
-                if (upperCount == 0)
+                adjustBox(upperCount, comboUpper, lblUpper);
+            }
+        }
+
+        // Adjusts combo boxes to display appropriate number of tickets
+        private void adjustBox(int count, ComboBox combo, Label label)
+        {
+            if (count == 0)
+            {
+                combo.Visible = false;
+                label.Text = "Sold Out";
+            }
+            else
+            {
+                for (int i = 0; i < (11 - count); i++)
                 {
-                    comboUpper.Visible = false;
-                    lblUpper.Text = "Sold Out";
-                }
-                else
-                {
-                    for (int i = 0; i < (9 - upperCount); i++)
-                    {
-                        comboUpper.Items.RemoveAt(upperCount + 1);
-                    }
+                    combo.Items.RemoveAt(count + 1);
                 }
             }
         }
