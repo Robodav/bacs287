@@ -51,7 +51,7 @@ public static class User
         get; set;
     }
 
-    public static string Cost
+    public static double Cost
     {
         get; set;
     }
