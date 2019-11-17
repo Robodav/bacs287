@@ -36,6 +36,7 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtCSV = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.lblCost = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTotal
@@ -105,11 +106,21 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.BtnSubmit_Click);
             // 
+            // lblCost
+            // 
+            this.lblCost.AutoSize = true;
+            this.lblCost.Location = new System.Drawing.Point(279, 41);
+            this.lblCost.Name = "lblCost";
+            this.lblCost.Size = new System.Drawing.Size(34, 13);
+            this.lblCost.TabIndex = 8;
+            this.lblCost.Text = "$0.00";
+            // 
             // frmPurchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 302);
+            this.Controls.Add(this.lblCost);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtCSV);
             this.Controls.Add(this.txtName);
@@ -135,5 +146,6 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtCSV;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lblCost;
     }
 }

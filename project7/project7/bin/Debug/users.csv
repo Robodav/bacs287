@@ -1,5 +1,5 @@
-﻿name,age,email,password,role,cc,ccname,csv,ticketslow,ticketsclub,ticketsupper,confirmation,cost
-Dav,20,dvan@gmail.com,test123,0,0,0,0,0,0,0,0,0
+name,age,email,password,role,cc,ccname,csv,ticketslow,ticketsclub,ticketsupper,confirmation,cost
+Dav,20,dvan@gmail.com,test123,0,0,0,0,2,1,4,0,525
 John,42,jman77@gmail.com,test123,0,0,0,0,0,0,0,0,0
 Shelly,30,sniperslay89@gmail.com,test123,0,0,0,0,0,0,0,0,0
 Cia,21,ciahyrule@hotmail.com,test123,0,0,0,0,0,0,0,0,0

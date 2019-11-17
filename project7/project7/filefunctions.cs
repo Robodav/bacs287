@@ -47,5 +47,22 @@ namespace project7
             }
             return "User not found!";
         }
+
+        public void writeField(string email, int field, string data)
+        // Overwrites users.csv with new information.
+        {
+            string[] users = System.IO.File.ReadAllLines("users.csv");
+            string filedata = "";
+            foreach (string user in users)
+            {
+                string[] individual = user.Split(',');
+                if (individual[2] == email)
+                {
+                    individual[field] = data;
+                }
+                filedata += string.Join(",", individual) + "\n";
+            }
+            System.IO.File.WriteAllText("users.csv", filedata);
+        }
     }
 }
