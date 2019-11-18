@@ -33,6 +33,7 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.linkNewAccount = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // lblUsername
@@ -69,25 +70,37 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(235, 55);
+            this.btnLogin.Location = new System.Drawing.Point(232, 74);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             // 
+            // linkNewAccount
+            // 
+            this.linkNewAccount.AutoSize = true;
+            this.linkNewAccount.Location = new System.Drawing.Point(26, 116);
+            this.linkNewAccount.Name = "linkNewAccount";
+            this.linkNewAccount.Size = new System.Drawing.Size(79, 13);
+            this.linkNewAccount.TabIndex = 5;
+            this.linkNewAccount.TabStop = true;
+            this.linkNewAccount.Text = "create account";
+            this.linkNewAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkNewAccount_LinkClicked);
+            // 
             // frmAdminLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 133);
+            this.ClientSize = new System.Drawing.Size(335, 155);
+            this.Controls.Add(this.linkNewAccount);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Name = "frmAdminLogin";
-            this.Text = "login";
+            this.Text = "admin_login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,5 +113,6 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.LinkLabel linkNewAccount;
     }
 }

@@ -50,11 +50,9 @@
             this.grpTickets.Controls.Add(this.lblUpper);
             this.grpTickets.Controls.Add(this.lblClub);
             this.grpTickets.Controls.Add(this.lblLower);
-            this.grpTickets.Location = new System.Drawing.Point(16, 39);
-            this.grpTickets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpTickets.Location = new System.Drawing.Point(12, 32);
             this.grpTickets.Name = "grpTickets";
-            this.grpTickets.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grpTickets.Size = new System.Drawing.Size(505, 294);
+            this.grpTickets.Size = new System.Drawing.Size(379, 239);
             this.grpTickets.TabIndex = 0;
             this.grpTickets.TabStop = false;
             this.grpTickets.Text = "Tickets";
@@ -62,19 +60,17 @@
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(383, 20);
-            this.lblQuantity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblQuantity.Location = new System.Drawing.Point(287, 16);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(65, 17);
+            this.lblQuantity.Size = new System.Drawing.Size(49, 13);
             this.lblQuantity.TabIndex = 7;
             this.lblQuantity.Text = "Quantity:";
             // 
             // btnBuy
             // 
-            this.btnBuy.Location = new System.Drawing.Point(196, 244);
-            this.btnBuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuy.Location = new System.Drawing.Point(126, 198);
             this.btnBuy.Name = "btnBuy";
-            this.btnBuy.Size = new System.Drawing.Size(156, 28);
+            this.btnBuy.Size = new System.Drawing.Size(117, 23);
             this.btnBuy.TabIndex = 6;
             this.btnBuy.Text = "Buy";
             this.btnBuy.UseVisualStyleBackColor = true;
@@ -94,10 +90,9 @@
             "7",
             "8",
             "Other"});
-            this.comboUpper.Location = new System.Drawing.Point(304, 180);
-            this.comboUpper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboUpper.Location = new System.Drawing.Point(228, 146);
             this.comboUpper.Name = "comboUpper";
-            this.comboUpper.Size = new System.Drawing.Size(160, 24);
+            this.comboUpper.Size = new System.Drawing.Size(121, 21);
             this.comboUpper.TabIndex = 5;
             // 
             // comboClub
@@ -114,10 +109,9 @@
             "7",
             "8",
             "Other"});
-            this.comboClub.Location = new System.Drawing.Point(304, 122);
-            this.comboClub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboClub.Location = new System.Drawing.Point(228, 99);
             this.comboClub.Name = "comboClub";
-            this.comboClub.Size = new System.Drawing.Size(160, 24);
+            this.comboClub.Size = new System.Drawing.Size(121, 21);
             this.comboClub.TabIndex = 4;
             // 
             // comboLower
@@ -133,50 +127,46 @@
             "6",
             "7",
             "8",
-            "Other"});
-            this.comboLower.Location = new System.Drawing.Point(304, 65);
-            this.comboLower.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            "9",
+            "10"});
+            this.comboLower.Location = new System.Drawing.Point(228, 53);
             this.comboLower.Name = "comboLower";
-            this.comboLower.Size = new System.Drawing.Size(160, 24);
+            this.comboLower.Size = new System.Drawing.Size(121, 21);
             this.comboLower.TabIndex = 3;
             // 
             // lblUpper
             // 
             this.lblUpper.AutoSize = true;
-            this.lblUpper.Location = new System.Drawing.Point(60, 183);
-            this.lblUpper.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUpper.Location = new System.Drawing.Point(45, 149);
             this.lblUpper.Name = "lblUpper";
-            this.lblUpper.Size = new System.Drawing.Size(135, 17);
+            this.lblUpper.Size = new System.Drawing.Size(104, 13);
             this.lblUpper.TabIndex = 2;
             this.lblUpper.Text = "Upper Deck: $50.00";
             // 
             // lblClub
             // 
             this.lblClub.AutoSize = true;
-            this.lblClub.Location = new System.Drawing.Point(60, 122);
-            this.lblClub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClub.Location = new System.Drawing.Point(45, 99);
             this.lblClub.Name = "lblClub";
-            this.lblClub.Size = new System.Drawing.Size(126, 17);
+            this.lblClub.Size = new System.Drawing.Size(96, 13);
             this.lblClub.TabIndex = 1;
             this.lblClub.Text = "Club Level: $75.00";
             // 
             // lblLower
             // 
             this.lblLower.AutoSize = true;
-            this.lblLower.Location = new System.Drawing.Point(60, 65);
-            this.lblLower.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLower.Location = new System.Drawing.Point(45, 53);
             this.lblLower.Name = "lblLower";
-            this.lblLower.Size = new System.Drawing.Size(144, 17);
+            this.lblLower.Size = new System.Drawing.Size(110, 13);
             this.lblLower.TabIndex = 0;
             this.lblLower.Text = "Lower Level: $125.00";
             // 
             // frmOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 375);
+            this.ClientSize = new System.Drawing.Size(405, 305);
             this.Controls.Add(this.grpTickets);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmOrder";
             this.Text = "Tickets";
             this.grpTickets.ResumeLayout(false);

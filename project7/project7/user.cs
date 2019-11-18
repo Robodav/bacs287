@@ -17,6 +17,11 @@ public static class User
         get; set;
     }
 
+    public static string Role
+    {
+        get; set;
+    }
+
     public static string CreditCard
     {
         get; set;
@@ -46,12 +51,13 @@ public static class User
     {
         get; set;
     }
+
     public static string Confirmation
     {
         get; set;
     }
 
-    public static string Cost
+    public static double Cost
     {
         get; set;
     }

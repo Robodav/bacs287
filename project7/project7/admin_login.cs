@@ -16,5 +16,10 @@ namespace project7
         {
             InitializeComponent();
         }
+
+        private void LinkNewAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
