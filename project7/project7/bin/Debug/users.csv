@@ -1,6 +1,6 @@
 name,age,email,password,role,cc,ccname,csv,ticketslow,ticketsclub,ticketsupper,confirmation,cost
 Dav,20,dvan@gmail.com,test123,0,1234123412341234,Dav,123,1,0,0,2616,125
-Shelly,30,sniperslay89@gmail.com,test123,0,0,0,0,0,0,0,0,0
+Shelly,30,sniperslay89@gmail.com,test123,0,1234123412341234,Shelly,123,0,2,3,5573,300
 Cia,21,ciahyrule@hotmail.com,test123,0,0,0,0,0,0,0,0,0
 Janet,24,jan@outlook.com,test123,0,0,0,0,0,0,0,0,0
 Christopher,41,chris@hotmail.com,test123,0,0,0,0,0,0,0,0,0

@@ -20,14 +20,16 @@ namespace project7
         private void LinkAdmin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            frmAdminLogin adminlog = new frmAdminLogin();
-            adminlog.ShowDialog();
+            User.Role = "1";
+            frmAdminLogin adminlogin = new frmAdminLogin();
+            adminlogin.ShowDialog();
             this.Close();
         }
 
         private void BtnGetTickets_Click(object sender, EventArgs e)
         {
             this.Hide();
+            User.Role = "0";
             frmLogin login = new frmLogin();
             login.ShowDialog();
             this.Close();

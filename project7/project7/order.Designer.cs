@@ -68,7 +68,7 @@
             // 
             // btnBuy
             // 
-            this.btnBuy.Location = new System.Drawing.Point(147, 198);
+            this.btnBuy.Location = new System.Drawing.Point(126, 198);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(117, 23);
             this.btnBuy.TabIndex = 6;

@@ -66,20 +66,28 @@ namespace project7
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
-            User.Lowticks = comboLower.SelectedItem.ToString();
-            User.Clubticks = comboClub.SelectedItem.ToString();
-            User.Upticks = comboUpper.SelectedItem.ToString();
+            if (comboLower.SelectedItem.ToString() == "0" && comboClub.SelectedItem.ToString() == "0" && comboUpper.SelectedItem.ToString() == "0")
+            {
+                MessageBox.Show("Please select a valid quantity.");
+            }
+            else
+            {
+                User.Lowticks = comboLower.SelectedItem.ToString();
+                User.Clubticks = comboClub.SelectedItem.ToString();
+                User.Upticks = comboUpper.SelectedItem.ToString();
 
-            var lowerTotal = int.Parse(User.Lowticks) * 125;
-            var clubTotal = int.Parse(User.Clubticks) * 75;
-            var upperTotal = int.Parse(User.Upticks) * 50;
-            var totalCost = lowerTotal + clubTotal + upperTotal;
+                var lowerTotal = int.Parse(User.Lowticks) * 125;
+                var clubTotal = int.Parse(User.Clubticks) * 75;
+                var upperTotal = int.Parse(User.Upticks) * 50;
+                var totalCost = lowerTotal + clubTotal + upperTotal;
 
-            User.Cost = totalCost;
+                User.Cost = totalCost;
 
-            this.Hide();
-            frmPurchase purchase = new frmPurchase();
-            purchase.ShowDialog();
+                this.Hide();
+                frmPurchase purchase = new frmPurchase();
+                purchase.ShowDialog();
+            }
+            
         }
     }
 }
