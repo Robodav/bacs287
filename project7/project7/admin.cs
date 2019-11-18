@@ -26,7 +26,15 @@ namespace project7
 
         private void btnFind_Click(object sender, EventArgs e)
         {
-
+            dataCustomers.ClearSelection();
+            for (int i=0; i<dataCustomers.Rows.Count; i++)
+            {
+                if (dataCustomers.Rows[i].Cells[3].Value.ToString() == txtConfirmation.Text)
+                {
+                    dataCustomers.Rows[i].Selected = true;
+                    return;
+                }
+            }
         }
 
         private void generateDataTable()

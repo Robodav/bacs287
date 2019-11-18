@@ -38,7 +38,7 @@
             this.lblLower = new System.Windows.Forms.Label();
             this.grpLookup = new System.Windows.Forms.GroupBox();
             this.btnFind = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtConfirmation = new System.Windows.Forms.TextBox();
             this.lblConfirmation = new System.Windows.Forms.Label();
             this.lblSalesNum = new System.Windows.Forms.Label();
             this.dataCustomers = new System.Windows.Forms.DataGridView();
@@ -137,7 +137,7 @@
             // grpLookup
             // 
             this.grpLookup.Controls.Add(this.btnFind);
-            this.grpLookup.Controls.Add(this.textBox1);
+            this.grpLookup.Controls.Add(this.txtConfirmation);
             this.grpLookup.Controls.Add(this.lblConfirmation);
             this.grpLookup.Location = new System.Drawing.Point(417, 90);
             this.grpLookup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -159,13 +159,13 @@
             this.btnFind.UseVisualStyleBackColor = true;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
-            // textBox1
+            // txtConfirmation
             // 
-            this.textBox1.Location = new System.Drawing.Point(160, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 22);
-            this.textBox1.TabIndex = 5;
+            this.txtConfirmation.Location = new System.Drawing.Point(160, 36);
+            this.txtConfirmation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConfirmation.Name = "txtConfirmation";
+            this.txtConfirmation.Size = new System.Drawing.Size(132, 22);
+            this.txtConfirmation.TabIndex = 5;
             // 
             // lblConfirmation
             // 
@@ -232,7 +232,7 @@
         private System.Windows.Forms.Label lblLower;
         private System.Windows.Forms.GroupBox grpLookup;
         private System.Windows.Forms.Button btnFind;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtConfirmation;
         private System.Windows.Forms.Label lblConfirmation;
         private System.Windows.Forms.Label lblSalesNum;
         private System.Windows.Forms.DataGridView dataCustomers;
