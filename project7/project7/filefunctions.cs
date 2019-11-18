@@ -160,10 +160,12 @@ namespace project7
         public string[][] getCustomerData()
         // Retrieves customer data and loads into array of arrays for data table in admin page.
         {
+            // Initially stored in a list for dynamic length purposes.
             List<string[]> data = new List<string[]>();
             string[] users = System.IO.File.ReadAllLines("users.csv");
             foreach (string user in users)
             {
+                // Cut out irrelevant information and put needed info in new array.
                 string[] individual = user.Split(',');
                 string[] individualdata = new string[7];
                 individualdata[0] = individual[0];
