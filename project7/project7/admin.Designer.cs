@@ -50,10 +50,12 @@
             // lblSales
             // 
             this.lblSales.AutoSize = true;
+            this.lblSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSales.ForeColor = System.Drawing.Color.Red;
             this.lblSales.Location = new System.Drawing.Point(144, 58);
             this.lblSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSales.Name = "lblSales";
-            this.lblSales.Size = new System.Drawing.Size(79, 17);
+            this.lblSales.Size = new System.Drawing.Size(122, 25);
             this.lblSales.TabIndex = 0;
             this.lblSales.Text = "Total Sales";
             // 
@@ -65,6 +67,7 @@
             this.grpSeats.Controls.Add(this.lblUpper);
             this.grpSeats.Controls.Add(this.lblClub);
             this.grpSeats.Controls.Add(this.lblLower);
+            this.grpSeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpSeats.Location = new System.Drawing.Point(31, 90);
             this.grpSeats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpSeats.Name = "grpSeats";
@@ -77,60 +80,66 @@
             // lblLowerNum
             // 
             this.lblLowerNum.AutoSize = true;
-            this.lblLowerNum.Location = new System.Drawing.Point(43, 78);
+            this.lblLowerNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLowerNum.Location = new System.Drawing.Point(20, 78);
             this.lblLowerNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLowerNum.Name = "lblLowerNum";
-            this.lblLowerNum.Size = new System.Drawing.Size(16, 17);
+            this.lblLowerNum.Size = new System.Drawing.Size(17, 17);
             this.lblLowerNum.TabIndex = 3;
             this.lblLowerNum.Text = "0";
             // 
             // lblClubNum
             // 
             this.lblClubNum.AutoSize = true;
-            this.lblClubNum.Location = new System.Drawing.Point(141, 78);
+            this.lblClubNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClubNum.Location = new System.Drawing.Point(146, 78);
             this.lblClubNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClubNum.Name = "lblClubNum";
-            this.lblClubNum.Size = new System.Drawing.Size(16, 17);
+            this.lblClubNum.Size = new System.Drawing.Size(17, 17);
             this.lblClubNum.TabIndex = 4;
             this.lblClubNum.Text = "0";
             // 
             // lblUpperNum
             // 
             this.lblUpperNum.AutoSize = true;
-            this.lblUpperNum.Location = new System.Drawing.Point(229, 78);
+            this.lblUpperNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpperNum.Location = new System.Drawing.Point(258, 78);
             this.lblUpperNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUpperNum.Name = "lblUpperNum";
-            this.lblUpperNum.Size = new System.Drawing.Size(16, 17);
+            this.lblUpperNum.Size = new System.Drawing.Size(17, 17);
             this.lblUpperNum.TabIndex = 5;
             this.lblUpperNum.Text = "0";
             // 
             // lblUpper
             // 
             this.lblUpper.AutoSize = true;
-            this.lblUpper.Location = new System.Drawing.Point(229, 39);
+            this.lblUpper.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpper.Location = new System.Drawing.Point(258, 39);
             this.lblUpper.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUpper.Name = "lblUpper";
-            this.lblUpper.Size = new System.Drawing.Size(87, 17);
+            this.lblUpper.Size = new System.Drawing.Size(98, 17);
             this.lblUpper.TabIndex = 2;
             this.lblUpper.Text = "Upper Deck:";
             // 
             // lblClub
             // 
             this.lblClub.AutoSize = true;
-            this.lblClub.Location = new System.Drawing.Point(141, 39);
+            this.lblClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClub.Location = new System.Drawing.Point(146, 39);
             this.lblClub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClub.Name = "lblClub";
-            this.lblClub.Size = new System.Drawing.Size(78, 17);
+            this.lblClub.Size = new System.Drawing.Size(89, 17);
             this.lblClub.TabIndex = 1;
             this.lblClub.Text = "Club Level:";
             // 
             // lblLower
             // 
             this.lblLower.AutoSize = true;
-            this.lblLower.Location = new System.Drawing.Point(43, 39);
+            this.lblLower.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLower.Location = new System.Drawing.Point(20, 39);
             this.lblLower.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLower.Name = "lblLower";
-            this.lblLower.Size = new System.Drawing.Size(88, 17);
+            this.lblLower.Size = new System.Drawing.Size(100, 17);
             this.lblLower.TabIndex = 0;
             this.lblLower.Text = "Lower Level:";
             // 
@@ -139,6 +148,7 @@
             this.grpLookup.Controls.Add(this.btnFind);
             this.grpLookup.Controls.Add(this.txtConfirmation);
             this.grpLookup.Controls.Add(this.lblConfirmation);
+            this.grpLookup.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpLookup.Location = new System.Drawing.Point(417, 90);
             this.grpLookup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpLookup.Name = "grpLookup";
@@ -150,18 +160,20 @@
             // 
             // btnFind
             // 
+            this.btnFind.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnFind.ForeColor = System.Drawing.Color.White;
             this.btnFind.Location = new System.Drawing.Point(115, 71);
             this.btnFind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(100, 28);
+            this.btnFind.Size = new System.Drawing.Size(100, 34);
             this.btnFind.TabIndex = 6;
             this.btnFind.Text = "Find";
-            this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.UseVisualStyleBackColor = false;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // txtConfirmation
             // 
-            this.txtConfirmation.Location = new System.Drawing.Point(160, 36);
+            this.txtConfirmation.Location = new System.Drawing.Point(181, 39);
             this.txtConfirmation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtConfirmation.Name = "txtConfirmation";
             this.txtConfirmation.Size = new System.Drawing.Size(132, 22);
@@ -173,17 +185,19 @@
             this.lblConfirmation.Location = new System.Drawing.Point(8, 39);
             this.lblConfirmation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConfirmation.Name = "lblConfirmation";
-            this.lblConfirmation.Size = new System.Drawing.Size(145, 17);
+            this.lblConfirmation.Size = new System.Drawing.Size(165, 17);
             this.lblConfirmation.TabIndex = 4;
             this.lblConfirmation.Text = "Confirmation Number:";
             // 
             // lblSalesNum
             // 
             this.lblSalesNum.AutoSize = true;
+            this.lblSalesNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalesNum.ForeColor = System.Drawing.Color.Red;
             this.lblSalesNum.Location = new System.Drawing.Point(287, 58);
             this.lblSalesNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSalesNum.Name = "lblSalesNum";
-            this.lblSalesNum.Size = new System.Drawing.Size(44, 17);
+            this.lblSalesNum.Size = new System.Drawing.Size(66, 25);
             this.lblSalesNum.TabIndex = 3;
             this.lblSalesNum.Text = "$0.00";
             // 

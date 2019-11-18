@@ -15,12 +15,7 @@ namespace project7
         public frmAdmin()
         {
             InitializeComponent();
-            // Adjust label values on form.
-            FileFunctions filefuncs = new FileFunctions();
-            lblSalesNum.Text = filefuncs.getTotalSales().ToString();
-            lblLowerNum.Text = filefuncs.getTicks(0);
-            lblClubNum.Text = filefuncs.getTicks(1);
-            lblUpperNum.Text = filefuncs.getTicks(2);
+            adjustLabels();
             generateDataTable();
         }
 
@@ -38,6 +33,16 @@ namespace project7
                 }
             }
             MessageBox.Show("No results found.");
+        }
+
+        private void adjustLabels()
+        // Adjust label values on form.
+        {
+            FileFunctions filefuncs = new FileFunctions();
+            lblSalesNum.Text = filefuncs.getTotalSales().ToString("c");
+            lblLowerNum.Text = filefuncs.getTicks(0);
+            lblClubNum.Text = filefuncs.getTicks(1);
+            lblUpperNum.Text = filefuncs.getTicks(2);
         }
 
         private void generateDataTable()

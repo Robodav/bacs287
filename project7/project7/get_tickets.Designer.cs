@@ -36,29 +36,35 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("MS Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(89, 140);
+            this.lblName.Font = new System.Drawing.Font("MS Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(119, 172);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(476, 48);
+            this.lblName.Size = new System.Drawing.Size(614, 60);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "The Stack Overflows";
             // 
             // btnGetTickets
             // 
-            this.btnGetTickets.Location = new System.Drawing.Point(246, 245);
+            this.btnGetTickets.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnGetTickets.Font = new System.Drawing.Font("Calibri", 12F);
+            this.btnGetTickets.ForeColor = System.Drawing.Color.White;
+            this.btnGetTickets.Location = new System.Drawing.Point(328, 302);
+            this.btnGetTickets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGetTickets.Name = "btnGetTickets";
-            this.btnGetTickets.Size = new System.Drawing.Size(146, 63);
+            this.btnGetTickets.Size = new System.Drawing.Size(195, 78);
             this.btnGetTickets.TabIndex = 1;
             this.btnGetTickets.Text = "Get Tickets";
-            this.btnGetTickets.UseVisualStyleBackColor = true;
+            this.btnGetTickets.UseVisualStyleBackColor = false;
             this.btnGetTickets.Click += new System.EventHandler(this.BtnGetTickets_Click);
             // 
             // linkAdmin
             // 
             this.linkAdmin.AutoSize = true;
-            this.linkAdmin.Location = new System.Drawing.Point(46, 41);
+            this.linkAdmin.Location = new System.Drawing.Point(61, 50);
+            this.linkAdmin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkAdmin.Name = "linkAdmin";
-            this.linkAdmin.Size = new System.Drawing.Size(36, 13);
+            this.linkAdmin.Size = new System.Drawing.Size(47, 17);
             this.linkAdmin.TabIndex = 2;
             this.linkAdmin.TabStop = true;
             this.linkAdmin.Text = "Admin";
@@ -66,12 +72,13 @@
             // 
             // frmGetTickets
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 437);
+            this.ClientSize = new System.Drawing.Size(868, 538);
             this.Controls.Add(this.linkAdmin);
             this.Controls.Add(this.btnGetTickets);
             this.Controls.Add(this.lblName);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmGetTickets";
             this.Text = "Tickets";
             this.ResumeLayout(false);

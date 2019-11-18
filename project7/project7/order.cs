@@ -54,6 +54,7 @@ namespace project7
             {
                 combo.Visible = false;
                 label.Text = "Sold Out";
+                label.ForeColor = Color.Red;
             }
             else
             {
