@@ -25,7 +25,7 @@ namespace project7
             {
                 MessageBox.Show("Please enter a valid email address.");
             }
-            else if (filefuncs.checkUser(txtEmail.Text))
+            else if (filefuncs.checkUser(txtEmail.Text, "users.csv"))
             {
                 MessageBox.Show("An account already exists with this email address.");
             }
@@ -35,7 +35,11 @@ namespace project7
             }
             else
             {
-                filefuncs.writeUser(txtName.Text, txtAge.Text, txtEmail.Text, txtPassword.Text, "0");
+                User.Name = txtName.Text;
+                User.Email = txtEmail.Text;
+                User.Age = txtAge.Text;
+                User.Password = txtPassword.Text;
+                filefuncs.writeUser("users.csv");
                 this.Hide();
                 frmLogin login = new frmLogin();
                 login.ShowDialog();

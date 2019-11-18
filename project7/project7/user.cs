@@ -7,17 +7,22 @@ public static class User
         get; set;
     }
 
+    public static string Age
+    {
+        get; set;
+    }
+
     public static string Email
+    {
+        get; set;
+    }
+
+    public static string Username
     {
         get; set;
     }
     
     public static string Password
-    {
-        get; set;
-    }
-
-    public static string Role
     {
         get; set;
     }

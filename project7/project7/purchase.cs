@@ -75,20 +75,20 @@ namespace project7
                 FileFunctions filefuncs = new FileFunctions();
 
                 // Update database after purchase is confirmed.
-                filefuncs.writeField(User.Email, 5, User.CreditCard);
-                filefuncs.writeField(User.Email, 6, User.CCName);
-                filefuncs.writeField(User.Email, 7, User.CSV);
-                filefuncs.writeField(User.Email, 8, User.Lowticks);
-                filefuncs.writeField(User.Email, 9, User.Clubticks);
-                filefuncs.writeField(User.Email, 10, User.Upticks);
-                filefuncs.writeField(User.Email, 12, User.Cost.ToString());
+                filefuncs.writeField(User.Email, 4, User.CreditCard, "users.csv");
+                filefuncs.writeField(User.Email, 5, User.CCName, "users.csv");
+                filefuncs.writeField(User.Email, 6, User.CSV, "users.csv");
+                filefuncs.writeField(User.Email, 7, User.Lowticks, "users.csv");
+                filefuncs.writeField(User.Email, 8, User.Clubticks, "users.csv");
+                filefuncs.writeField(User.Email, 9, User.Upticks, "users.csv");
+                filefuncs.writeField(User.Email, 11, User.Cost.ToString(), "users.csv");
 
                 filefuncs.adjustTicks("lower", "subtract", int.Parse(User.Lowticks));
                 filefuncs.adjustTicks("club", "subtract", int.Parse(User.Clubticks));
                 filefuncs.adjustTicks("upper", "subtract", int.Parse(User.Upticks));
 
                 User.Confirmation = filefuncs.generateConfirmationNumber().ToString();
-                filefuncs.writeField(User.Email, 11, User.Confirmation);
+                filefuncs.writeField(User.Email, 10, User.Confirmation, "users.csv");
 
                 MessageBox.Show(generateCongratsMessage());
             }

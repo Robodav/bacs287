@@ -17,9 +17,6 @@ namespace project7
             InitializeComponent();
         }
 
-        InputFunctions inputfuncs = new InputFunctions();
-        FileFunctions filefuncs = new FileFunctions();
-
         private void LinkCreate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
@@ -29,19 +26,20 @@ namespace project7
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            InputFunctions inputfuncs = new InputFunctions();
+            FileFunctions filefuncs = new FileFunctions();
             string email = txtEmail.Text;
             if (!inputfuncs.verifyEmail(email))
             {
                 MessageBox.Show("Please enter a valid email address");
             }
-            else if (filefuncs.checkUser(email))
+            else if (filefuncs.checkUser(email, "users.csv"))
             {
-                string password = filefuncs.getField(email, 3);
+                string password = filefuncs.getField(email, 2, "users.csv");
                 if (password == txtPassword.Text)
                 {
                     this.Hide();
-                    // Create user object to maintain attributes throughout application.
-                    User.Name = filefuncs.getField(email, 0);
+                    User.Name = filefuncs.getField(email, 0, "users.csv");
                     User.Email = email;
                     User.Password = password;
                     frmProfile profile = new frmProfile();

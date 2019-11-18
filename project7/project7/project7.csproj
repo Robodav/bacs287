@@ -63,6 +63,12 @@
       <DependentUpon>admin_login.cs</DependentUpon>
     </Compile>
     <Compile Include="filefunctions.cs" />
+    <Compile Include="new_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new_admin.Designer.cs">
+      <DependentUpon>new_admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admin_login.resx">
       <DependentUpon>admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new_admin.resx">
+      <DependentUpon>new_admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="profile.resx">
       <DependentUpon>profile.cs</DependentUpon>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace project7
 {
@@ -9,22 +10,30 @@ namespace project7
 
         }
 
-        public void writeUser(string name, string age, string email, string password, string role) 
-        // Writes a new user to users.csv.
+        public void writeUser(string path) 
+        // Writes a new user to the specified path.
         {
-            string userInfo = "\n" + name + "," + age + "," + email + "," + password + "," + role;
-            userInfo += ",0,0,0,0,0,0,0,0";
-            System.IO.File.AppendAllText("users.csv", userInfo);
+            string userInfo;
+            if (path == "admins.csv")
+            {
+                userInfo = "\n" + User.Name + "," + User.Username + "," + User.Password;
+            }
+            else
+            {
+                userInfo = "\n" + User.Name + "," + User.Email + "," + User.Age + "," + User.Password;
+                userInfo += ",0,0,0,0,0,0,0,0";
+            }
+            System.IO.File.AppendAllText(path, userInfo);
         }
 
-        public bool checkUser(string email) 
-        // Checks if a user exists in users.csv.
+        public bool checkUser(string identifier, string path) 
+        // Checks if a user exists in the specified path using the given identifier.
         {
-            string[] users = System.IO.File.ReadAllLines("users.csv");
+            string[] users = System.IO.File.ReadAllLines(path);
             foreach (string user in users)
             {
                 string[] individual = user.Split(',');
-                if (individual[2] == email)
+                if (individual[1] == identifier)
                 {
                     return true;
                 }
@@ -33,14 +42,14 @@ namespace project7
             return false;
         }
 
-        public string getField(string email, int field) 
-        // Returns value of index field for user based on specified email from users.csv.
+        public string getField(string id, int field, string path) 
+        // Returns value of index field for user based on specified identifier from file.
         {
-            string[] users = System.IO.File.ReadAllLines("users.csv");
-            foreach (string user in users)
+            string[] rows = System.IO.File.ReadAllLines("path");
+            foreach (string row in rows)
             {
-                string[] individual = user.Split(',');
-                if (individual[2] == email)
+                string[] individual = row.Split(',');
+                if (individual[1] == id)
                 {
                     return individual[field];
                 }
@@ -48,21 +57,21 @@ namespace project7
             return "User not found!";
         }
 
-        public void writeField(string email, int field, string data)
-        // Overwrites users.csv with new information.
+        public void writeField(string id, int field, string data, string path)
+        // Overwrites user fields with new information.
         {
-            string[] users = System.IO.File.ReadAllLines("users.csv");
+            string[] rows = System.IO.File.ReadAllLines(path);
             string filedata = "";
-            foreach (string user in users)
+            foreach (string row in rows)
             {
-                string[] individual = user.Split(',');
-                if (individual[2] == email)
+                string[] individual = row.Split(',');
+                if (individual[1] == id)
                 {
                     individual[field] = data;
                 }
                 filedata += string.Join(",", individual) + "\n";
             }
-            System.IO.File.WriteAllText("users.csv", filedata);
+            System.IO.File.WriteAllText(path, filedata);
         }
 
         public void adjustTicks(string level, string operation, int ticks)
@@ -117,13 +126,57 @@ namespace project7
             foreach (string user in users)
             {
                 string[] individual = user.Split(',');
-                if (individual[11] == confirmation.ToString())
+                if (individual[10] == confirmation.ToString())
                 // If confirmation number is used, try again.
                 {
                     generateConfirmationNumber();
                 }
             }
             return confirmation;
+        }
+
+        public int getTotalSales()
+        // Find the total sales amount by adding up each user's total ticket cost.
+        {
+            int total = 0;
+            string[] users = System.IO.File.ReadAllLines("users.csv");
+            foreach (string user in users)
+            {
+                string[] individual = user.Split(',');
+                if (individual[11] != "cost")
+                {
+                    total += int.Parse(individual[12]);
+                }
+            }
+            return total;
+        }
+
+        public string getTicks(int level)
+        {
+            string[] rows = System.IO.File.ReadAllLines("tickets.csv");
+            string[] tickets = rows[1].Split(',');
+            return tickets[level];
+        }
+
+        public string[][] getCustomerData()
+        // Retrieves customer data and loads into array of arrays for data table in admin page.
+        {
+            List<string[]> data = new List<string[]>();
+            string[] users = System.IO.File.ReadAllLines("users.csv");
+            foreach (string user in users)
+            {
+                string[] individual = user.Split(',');
+                string[] individualdata = new string[7];
+                individualdata[0] = individual[0];
+                individualdata[1] = individual[1];
+                individualdata[2] = individual[11];
+                individualdata[3] = individual[10];
+                individualdata[4] = individual[7];
+                individualdata[5] = individual[8];
+                individualdata[6] = individual[9];
+                data.Add(individualdata);
+            }
+            return data.ToArray();
         }
     }
 }

@@ -30,17 +30,17 @@
         {
             this.lblSales = new System.Windows.Forms.Label();
             this.grpSeats = new System.Windows.Forms.GroupBox();
-            this.grpLookup = new System.Windows.Forms.GroupBox();
-            this.lblLower = new System.Windows.Forms.Label();
-            this.lblClub = new System.Windows.Forms.Label();
-            this.lblUpper = new System.Windows.Forms.Label();
             this.lblLowerNum = new System.Windows.Forms.Label();
             this.lblClubNum = new System.Windows.Forms.Label();
             this.lblUpperNum = new System.Windows.Forms.Label();
-            this.lblSalesNum = new System.Windows.Forms.Label();
-            this.lblConfirmation = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblUpper = new System.Windows.Forms.Label();
+            this.lblClub = new System.Windows.Forms.Label();
+            this.lblLower = new System.Windows.Forms.Label();
+            this.grpLookup = new System.Windows.Forms.GroupBox();
             this.btnFind = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblConfirmation = new System.Windows.Forms.Label();
+            this.lblSalesNum = new System.Windows.Forms.Label();
             this.dataCustomers = new System.Windows.Forms.DataGridView();
             this.grpSeats.SuspendLayout();
             this.grpLookup.SuspendLayout();
@@ -50,9 +50,10 @@
             // lblSales
             // 
             this.lblSales.AutoSize = true;
-            this.lblSales.Location = new System.Drawing.Point(108, 47);
+            this.lblSales.Location = new System.Drawing.Point(144, 58);
+            this.lblSales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSales.Name = "lblSales";
-            this.lblSales.Size = new System.Drawing.Size(60, 13);
+            this.lblSales.Size = new System.Drawing.Size(79, 17);
             this.lblSales.TabIndex = 0;
             this.lblSales.Text = "Total Sales";
             // 
@@ -64,131 +65,149 @@
             this.grpSeats.Controls.Add(this.lblUpper);
             this.grpSeats.Controls.Add(this.lblClub);
             this.grpSeats.Controls.Add(this.lblLower);
-            this.grpSeats.Location = new System.Drawing.Point(23, 73);
+            this.grpSeats.Location = new System.Drawing.Point(31, 90);
+            this.grpSeats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpSeats.Name = "grpSeats";
-            this.grpSeats.Size = new System.Drawing.Size(284, 92);
+            this.grpSeats.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpSeats.Size = new System.Drawing.Size(379, 113);
             this.grpSeats.TabIndex = 1;
             this.grpSeats.TabStop = false;
             this.grpSeats.Text = "Seats Remaining";
             // 
-            // grpLookup
-            // 
-            this.grpLookup.Controls.Add(this.btnFind);
-            this.grpLookup.Controls.Add(this.textBox1);
-            this.grpLookup.Controls.Add(this.lblConfirmation);
-            this.grpLookup.Location = new System.Drawing.Point(313, 73);
-            this.grpLookup.Name = "grpLookup";
-            this.grpLookup.Size = new System.Drawing.Size(291, 92);
-            this.grpLookup.TabIndex = 2;
-            this.grpLookup.TabStop = false;
-            this.grpLookup.Text = "Guest Lookup";
-            // 
-            // lblLower
-            // 
-            this.lblLower.AutoSize = true;
-            this.lblLower.Location = new System.Drawing.Point(32, 32);
-            this.lblLower.Name = "lblLower";
-            this.lblLower.Size = new System.Drawing.Size(68, 13);
-            this.lblLower.TabIndex = 0;
-            this.lblLower.Text = "Lower Level:";
-            // 
-            // lblClub
-            // 
-            this.lblClub.AutoSize = true;
-            this.lblClub.Location = new System.Drawing.Point(106, 32);
-            this.lblClub.Name = "lblClub";
-            this.lblClub.Size = new System.Drawing.Size(60, 13);
-            this.lblClub.TabIndex = 1;
-            this.lblClub.Text = "Club Level:";
-            // 
-            // lblUpper
-            // 
-            this.lblUpper.AutoSize = true;
-            this.lblUpper.Location = new System.Drawing.Point(172, 32);
-            this.lblUpper.Name = "lblUpper";
-            this.lblUpper.Size = new System.Drawing.Size(68, 13);
-            this.lblUpper.TabIndex = 2;
-            this.lblUpper.Text = "Upper Deck:";
-            // 
             // lblLowerNum
             // 
             this.lblLowerNum.AutoSize = true;
-            this.lblLowerNum.Location = new System.Drawing.Point(32, 63);
+            this.lblLowerNum.Location = new System.Drawing.Point(43, 78);
+            this.lblLowerNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLowerNum.Name = "lblLowerNum";
-            this.lblLowerNum.Size = new System.Drawing.Size(13, 13);
+            this.lblLowerNum.Size = new System.Drawing.Size(16, 17);
             this.lblLowerNum.TabIndex = 3;
             this.lblLowerNum.Text = "0";
             // 
             // lblClubNum
             // 
             this.lblClubNum.AutoSize = true;
-            this.lblClubNum.Location = new System.Drawing.Point(106, 63);
+            this.lblClubNum.Location = new System.Drawing.Point(141, 78);
+            this.lblClubNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClubNum.Name = "lblClubNum";
-            this.lblClubNum.Size = new System.Drawing.Size(13, 13);
+            this.lblClubNum.Size = new System.Drawing.Size(16, 17);
             this.lblClubNum.TabIndex = 4;
             this.lblClubNum.Text = "0";
             // 
             // lblUpperNum
             // 
             this.lblUpperNum.AutoSize = true;
-            this.lblUpperNum.Location = new System.Drawing.Point(172, 63);
+            this.lblUpperNum.Location = new System.Drawing.Point(229, 78);
+            this.lblUpperNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUpperNum.Name = "lblUpperNum";
-            this.lblUpperNum.Size = new System.Drawing.Size(13, 13);
+            this.lblUpperNum.Size = new System.Drawing.Size(16, 17);
             this.lblUpperNum.TabIndex = 5;
             this.lblUpperNum.Text = "0";
             // 
-            // lblSalesNum
+            // lblUpper
             // 
-            this.lblSalesNum.AutoSize = true;
-            this.lblSalesNum.Location = new System.Drawing.Point(215, 47);
-            this.lblSalesNum.Name = "lblSalesNum";
-            this.lblSalesNum.Size = new System.Drawing.Size(34, 13);
-            this.lblSalesNum.TabIndex = 3;
-            this.lblSalesNum.Text = "$0.00";
+            this.lblUpper.AutoSize = true;
+            this.lblUpper.Location = new System.Drawing.Point(229, 39);
+            this.lblUpper.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUpper.Name = "lblUpper";
+            this.lblUpper.Size = new System.Drawing.Size(87, 17);
+            this.lblUpper.TabIndex = 2;
+            this.lblUpper.Text = "Upper Deck:";
+            // 
+            // lblClub
+            // 
+            this.lblClub.AutoSize = true;
+            this.lblClub.Location = new System.Drawing.Point(141, 39);
+            this.lblClub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClub.Name = "lblClub";
+            this.lblClub.Size = new System.Drawing.Size(78, 17);
+            this.lblClub.TabIndex = 1;
+            this.lblClub.Text = "Club Level:";
+            // 
+            // lblLower
+            // 
+            this.lblLower.AutoSize = true;
+            this.lblLower.Location = new System.Drawing.Point(43, 39);
+            this.lblLower.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLower.Name = "lblLower";
+            this.lblLower.Size = new System.Drawing.Size(88, 17);
+            this.lblLower.TabIndex = 0;
+            this.lblLower.Text = "Lower Level:";
+            // 
+            // grpLookup
+            // 
+            this.grpLookup.Controls.Add(this.btnFind);
+            this.grpLookup.Controls.Add(this.textBox1);
+            this.grpLookup.Controls.Add(this.lblConfirmation);
+            this.grpLookup.Location = new System.Drawing.Point(417, 90);
+            this.grpLookup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpLookup.Name = "grpLookup";
+            this.grpLookup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpLookup.Size = new System.Drawing.Size(388, 113);
+            this.grpLookup.TabIndex = 2;
+            this.grpLookup.TabStop = false;
+            this.grpLookup.Text = "Guest Lookup";
+            // 
+            // btnFind
+            // 
+            this.btnFind.Location = new System.Drawing.Point(115, 71);
+            this.btnFind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Size = new System.Drawing.Size(100, 28);
+            this.btnFind.TabIndex = 6;
+            this.btnFind.Text = "Find";
+            this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(160, 36);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(132, 22);
+            this.textBox1.TabIndex = 5;
             // 
             // lblConfirmation
             // 
             this.lblConfirmation.AutoSize = true;
-            this.lblConfirmation.Location = new System.Drawing.Point(6, 32);
+            this.lblConfirmation.Location = new System.Drawing.Point(8, 39);
+            this.lblConfirmation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConfirmation.Name = "lblConfirmation";
-            this.lblConfirmation.Size = new System.Drawing.Size(108, 13);
+            this.lblConfirmation.Size = new System.Drawing.Size(145, 17);
             this.lblConfirmation.TabIndex = 4;
             this.lblConfirmation.Text = "Confirmation Number:";
             // 
-            // textBox1
+            // lblSalesNum
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // btnFind
-            // 
-            this.btnFind.Location = new System.Drawing.Point(86, 58);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(75, 23);
-            this.btnFind.TabIndex = 6;
-            this.btnFind.Text = "Find";
-            this.btnFind.UseVisualStyleBackColor = true;
+            this.lblSalesNum.AutoSize = true;
+            this.lblSalesNum.Location = new System.Drawing.Point(287, 58);
+            this.lblSalesNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSalesNum.Name = "lblSalesNum";
+            this.lblSalesNum.Size = new System.Drawing.Size(44, 17);
+            this.lblSalesNum.TabIndex = 3;
+            this.lblSalesNum.Text = "$0.00";
             // 
             // dataCustomers
             // 
             this.dataCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCustomers.Location = new System.Drawing.Point(23, 171);
+            this.dataCustomers.Location = new System.Drawing.Point(31, 210);
+            this.dataCustomers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataCustomers.Name = "dataCustomers";
-            this.dataCustomers.Size = new System.Drawing.Size(581, 267);
+            this.dataCustomers.RowHeadersWidth = 51;
+            this.dataCustomers.Size = new System.Drawing.Size(775, 329);
             this.dataCustomers.TabIndex = 4;
             // 
             // frmAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 450);
+            this.ClientSize = new System.Drawing.Size(832, 554);
             this.Controls.Add(this.dataCustomers);
             this.Controls.Add(this.lblSalesNum);
             this.Controls.Add(this.grpLookup);
             this.Controls.Add(this.grpSeats);
             this.Controls.Add(this.lblSales);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAdmin";
             this.Text = "admin";
             this.grpSeats.ResumeLayout(false);

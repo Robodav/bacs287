@@ -34,9 +34,9 @@ namespace project7
         {
             FileFunctions funcs = new FileFunctions();
             string message = "Here are the tickets you've purchased:\n";
-            message += "Lower: " + funcs.getField(User.Email, 8) + "\n";
-            message += "Club: " + funcs.getField(User.Email, 9) + "\n";
-            message += "Upper: " + funcs.getField(User.Email, 10) + "\n";
+            message += "Lower: " + funcs.getField(User.Email, 7, "users.csv") + "\n";
+            message += "Club: " + funcs.getField(User.Email, 8, "users.csv") + "\n";
+            message += "Upper: " + funcs.getField(User.Email, 9, "users.csv") + "\n";
             return message;
         }
     }
