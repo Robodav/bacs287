@@ -20,7 +20,7 @@ namespace project7
 
         private void BtnCheck_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(generateProfileInfo());
         }
 
         private void btnPurchase_Click(object sender, EventArgs e)
@@ -28,6 +28,16 @@ namespace project7
             this.Hide();
             frmOrder order = new frmOrder();
             order.ShowDialog();
+        }
+
+        private string generateProfileInfo()
+        {
+            FileFunctions funcs = new FileFunctions();
+            string message = "Here are the tickets you've purchased:\n";
+            message += "Lower: " + funcs.getField(User.Email, 8) + "\n";
+            message += "Club: " + funcs.getField(User.Email, 9) + "\n";
+            message += "Upper: " + funcs.getField(User.Email, 10) + "\n";
+            return message;
         }
     }
 }
