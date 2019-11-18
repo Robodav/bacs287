@@ -136,7 +136,7 @@
             this.btnTogglePassView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTogglePassView.Name = "btnTogglePassView";
             this.btnTogglePassView.Size = new System.Drawing.Size(29, 27);
-            this.btnTogglePassView.TabIndex = 9;
+            this.btnTogglePassView.TabIndex = 10;
             this.btnTogglePassView.UseVisualStyleBackColor = true;
             this.btnTogglePassView.Click += new System.EventHandler(this.btnTogglePassView_Click);
             // 

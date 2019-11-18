@@ -55,7 +55,7 @@
             // 
             this.lblCreditCard.AutoSize = true;
             this.lblCreditCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreditCard.Location = new System.Drawing.Point(80, 113);
+            this.lblCreditCard.Location = new System.Drawing.Point(60, 113);
             this.lblCreditCard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCreditCard.Name = "lblCreditCard";
             this.lblCreditCard.Size = new System.Drawing.Size(183, 20);
@@ -66,7 +66,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(131, 176);
+            this.lblName.Location = new System.Drawing.Point(111, 176);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(132, 20);
@@ -77,7 +77,7 @@
             // 
             this.lblCSV.AutoSize = true;
             this.lblCSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCSV.Location = new System.Drawing.Point(211, 238);
+            this.lblCSV.Location = new System.Drawing.Point(191, 238);
             this.lblCSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCSV.Name = "lblCSV";
             this.lblCSV.Size = new System.Drawing.Size(52, 20);
