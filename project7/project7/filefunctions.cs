@@ -64,5 +64,66 @@ namespace project7
             }
             System.IO.File.WriteAllText("users.csv", filedata);
         }
+
+        public void adjustTicks(string level, string operation, int ticks)
+        // Increases or decreases the tickets available in tickets.csv.
+        {
+            string[] rows = System.IO.File.ReadAllLines("tickets.csv");
+            string newdata = rows[0];
+            string[] ticketrow = rows[1].Split(',');
+            if (level == "lower")
+            {
+                if (operation == "add")
+                {
+                    ticketrow[0] = (int.Parse(ticketrow[0]) + ticks).ToString();
+                }
+                else
+                {
+                    ticketrow[0] = (int.Parse(ticketrow[0]) - ticks).ToString();
+                }
+            }
+            else if (level == "club")
+            {
+                if (operation == "add")
+                {
+                    ticketrow[1] = (int.Parse(ticketrow[1]) + ticks).ToString();
+                }
+                else
+                {
+                    ticketrow[1] = (int.Parse(ticketrow[1]) - ticks).ToString();
+                }
+            }
+            else
+            {
+                if (operation == "add")
+                {
+                    ticketrow[2] = (int.Parse(ticketrow[2]) + ticks).ToString();
+                }
+                else
+                {
+                    ticketrow[2] = (int.Parse(ticketrow[2]) - ticks).ToString();
+                }
+            }
+            newdata = newdata + "\n" + string.Join(",", ticketrow);
+            System.IO.File.WriteAllText("tickets.csv", newdata);
+        }
+
+        public int generateConfirmationNumber()
+        // Iterates through all confirmation numbers to generate a new unique confirmation number.
+        {
+            Random rand = new Random();
+            int confirmation = rand.Next(2000, 9000);
+            string[] users = System.IO.File.ReadAllLines("users.csv");
+            foreach (string user in users)
+            {
+                string[] individual = user.Split(',');
+                if (individual[11] == confirmation.ToString())
+                // If confirmation number is used, try again.
+                {
+                    generateConfirmationNumber();
+                }
+            }
+            return confirmation;
+        }
     }
 }

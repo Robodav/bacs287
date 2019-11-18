@@ -47,8 +47,8 @@ namespace project7
             }
         }
 
-        // Adjusts combo boxes and respective labels to display appropriate number of tickets
         private void adjustBox(int count, ComboBox combo, Label label)
+        // Adjusts combo boxes and respective labels to display appropriate number of tickets
         {
             if (count == 0)
             {
@@ -66,14 +66,9 @@ namespace project7
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
-            FileFunctions filefuncs = new FileFunctions();
-
             User.Lowticks = comboLower.SelectedItem.ToString();
-            filefuncs.writeField(User.Email, 8, User.Lowticks);
             User.Clubticks = comboClub.SelectedItem.ToString();
-            filefuncs.writeField(User.Email, 9, User.Clubticks);
             User.Upticks = comboUpper.SelectedItem.ToString();
-            filefuncs.writeField(User.Email, 10, User.Upticks);
 
             var lowerTotal = int.Parse(User.Lowticks) * 125;
             var clubTotal = int.Parse(User.Clubticks) * 75;
@@ -81,7 +76,6 @@ namespace project7
             var totalCost = lowerTotal + clubTotal + upperTotal;
 
             User.Cost = totalCost;
-            filefuncs.writeField(User.Email, 12, User.Cost.ToString());
 
             this.Hide();
             frmPurchase purchase = new frmPurchase();
