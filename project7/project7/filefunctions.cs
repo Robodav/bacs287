@@ -38,14 +38,13 @@ namespace project7
                     return true;
                 }
             }
-
             return false;
         }
 
         public string getField(string id, int field, string path) 
         // Returns value of index field for user based on specified identifier from file.
         {
-            string[] rows = System.IO.File.ReadAllLines("path");
+            string[] rows = System.IO.File.ReadAllLines(path);
             foreach (string row in rows)
             {
                 string[] individual = row.Split(',');
@@ -145,7 +144,7 @@ namespace project7
                 string[] individual = user.Split(',');
                 if (individual[11] != "cost")
                 {
-                    total += int.Parse(individual[12]);
+                    total += int.Parse(individual[11]);
                 }
             }
             return total;

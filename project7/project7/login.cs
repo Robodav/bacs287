@@ -35,7 +35,7 @@ namespace project7
             }
             else if (filefuncs.checkUser(email, "users.csv"))
             {
-                string password = filefuncs.getField(email, 2, "users.csv");
+                string password = filefuncs.getField(email, 3, "users.csv");
                 if (password == txtPassword.Text)
                 {
                     this.Hide();

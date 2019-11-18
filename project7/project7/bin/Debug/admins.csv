@@ -1,1 +1,4 @@
-﻿name,age,email,cc,ccname,csv,ticketslow,ticketsclub,ticketsupper,confirmation,cost
+﻿name,username,password
+David,robodav,test123
+admin,admin,BACS287
+John,jman,test123

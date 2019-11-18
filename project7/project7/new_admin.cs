@@ -30,6 +30,9 @@ namespace project7
             }
             else
             {
+                User.Name = txtName.Text;
+                User.Username = txtUsername.Text;
+                User.Password = txtPassword.Text;
                 filefuncs.writeUser("admins.csv");
                 this.Hide();
                 frmAdminLogin adminlogin = new frmAdminLogin();
